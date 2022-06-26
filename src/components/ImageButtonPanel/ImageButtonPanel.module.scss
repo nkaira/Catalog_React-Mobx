@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+
+    font-family: 'Epilogue';
+    font-size: 400;
+    width: 170px;
+    height: 50px;
+    padding: 0px;
+    color: #391400;
+    background-color: #FFFF;
+    border-radius: 10px;
+    margin: 55px 15px 180px;
+    border: 1px solid #FFFF;
+    box-shadow: 1px 2px 5px 0px #e0d1c8;
+
+    &:hover {
+        color: gray;
+        cursor: pointer;
+    }
+}
