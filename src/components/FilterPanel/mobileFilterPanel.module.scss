@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap');
+
+.container {
+    margin-top: 30px;
+}
+
+.selectBox {
+    display: flex;
+    width: 330px;
+    flex-direction: column;
+    color: #391400;
+}
+
+.optionsContainer {
+    font-family: 'Epilogue';
+    background: #FFFF;
+
+    max-height: 0;
+    width: 100%;
+    transition: all 0.4s;
+    border-radius: 8px;
+    order: 1;
+    max-height: 200px;
+    width: 330px;
+    opacity: 1;
+    overflow-y: scroll;
+    position: absolute;
+    top: 490px;
+    z-index: 1000;
+}
+
+.option,
+.selected {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: rgb(231, 230, 230);
+}
+
+.selected {
+    color: #391400;
+    background: #FFFF;
+    border-radius: 8px;
+    margin-bottom: 3px;
+    position: relative;
+    order: 0;
+    border: 1px solid #fad0ba;
+}
+
+.selected::after {
+    content: '';
+    background: url('../../img/icons/triangle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 12px;
+    right: 25px;
+    top: 25px;
+}

@@ -17,14 +17,36 @@ const FilterPanel = ({ onChangeFilter }) => {
 
     return (
         <section className={styles.filter}>
-            <button className={buttonAll} onClick={() => onChangeFilter(FILTER_ALL)}> Show All </button>
-            <button className={buttonDesign} onClick={() => onChangeFilter(FILTER_DESIGN)}> Design </button>
-            <button className={buttonBranding} onClick={() => onChangeFilter(FILTER_BRANDING)}> Branding </button>
-            <button className={buttonIllustration} onClick={() => onChangeFilter(FILTER_ILLUSTRATION)}> Illustration </button>
-            <button className={buttonMotion} onClick={() => onChangeFilter(FILTER_MOTION)}> Motion </button>
+            <ul className={styles.filter__list}>
+                <button className={buttonAll} onClick={() => onChangeFilter(FILTER_ALL)}> Show All </button>
+                <button className={buttonDesign} onClick={() => onChangeFilter(FILTER_DESIGN)}> Design </button>
+                <button className={buttonBranding} onClick={() => onChangeFilter(FILTER_BRANDING)}> Branding </button>
+                <button className={buttonIllustration} onClick={() => onChangeFilter(FILTER_ILLUSTRATION)}> Illustration </button>
+                <button className={buttonMotion} onClick={() => onChangeFilter(FILTER_MOTION)}> Motion </button>
+            </ul>
         </section>
     )
 }
 
 export default observer(FilterPanel);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

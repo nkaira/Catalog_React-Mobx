@@ -1,6 +1,6 @@
 import { FILTER_ALL, FILTER_DESIGN, FILTER_BRANDING, FILTER_ILLUSTRATION, FILTER_MOTION } from 'store/MainStore';
 
-export function getFilteredTasks(images, filterStatus) {
+function getFilteredTasks(images, filterStatus) {
     switch (filterStatus) {
         case FILTER_ALL:
             return images;
@@ -16,6 +16,8 @@ export function getFilteredTasks(images, filterStatus) {
             return images;
     }
 }
+
+export default getFilteredTasks;
 
 
 

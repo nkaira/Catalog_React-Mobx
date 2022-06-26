@@ -91,7 +91,7 @@ function addField(array) {
 
 const updatedImageArray = addField(imageArray);
 
-export const FILTER_ALL = 'FILTER_ALL';
+export const FILTER_ALL = 'Show All';
 export const FILTER_DESIGN = 'Design';
 export const FILTER_BRANDING = 'Branding';
 export const FILTER_ILLUSTRATION = 'Illustration';

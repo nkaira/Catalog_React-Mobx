@@ -4,13 +4,13 @@ import mainStore from 'store/MainStore';
 import ImageItem from 'components/ImageList/ImageItem';
 import styles from './imageList.module.scss';
 
-const ImageList = ({ images, onChangeFilter }) => {
+const ImageList = ({ isMobile, images, onChangeFilter }) => {
 
     const handleImageActive = (event) => {
-        if (event.target.tagName === 'IMG') {
-            event.target.parentNode.classList.toggle(styles.imageActive)
+        if (event.target.tagName === 'IMG' && !isMobile) {
+            event.target.parentNode.classList.toggle(styles.imageActive);
             const imageId = Number(event.target.parentNode.dataset.id);
-            mainStore.activeImage(imageId)
+            mainStore.activeImage(imageId);
         }
     }
 

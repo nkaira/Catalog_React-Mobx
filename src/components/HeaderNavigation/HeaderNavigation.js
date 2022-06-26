@@ -1,4 +1,4 @@
-import { observer } from 'mobx-react'
+import { observer } from 'mobx-react';
 
 import logo from 'img/icons/logo.png';
 import styles from './headerNavigation.module.scss';

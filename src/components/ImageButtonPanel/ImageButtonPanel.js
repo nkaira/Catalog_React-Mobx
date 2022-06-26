@@ -1,9 +1,10 @@
 import { observer } from 'mobx-react';
+import cn from "classnames";
 
 import mainStore from 'store/MainStore';
 import styles from './ImageButtonPanel.module.scss';
 
-const ImageButtonPanel = () => {
+const ImageButtonPanel = ({ isMobile }) => {
 
     const handleRemoveImage = () => {
         mainStore.removeImage();
@@ -13,10 +14,12 @@ const ImageButtonPanel = () => {
         mainStore.loadImage();
     }
 
+    const buttonDelete = cn(styles.button, { [styles.button__delete]: isMobile })
+
     return (
         <div className={styles.container}>
             <button className={styles.button} onClick={handleLoadImage}>LOAD MORE</button>
-            <button className={styles.button} onClick={handleRemoveImage}>DELETE</button>
+            <button className={buttonDelete} onClick={handleRemoveImage}>DELETE</button>
         </div>
     )
 }

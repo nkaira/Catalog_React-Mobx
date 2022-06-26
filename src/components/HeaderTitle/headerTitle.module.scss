@@ -22,3 +22,14 @@
     line-height: 2em;
     text-align: center;
 }
+
+@media (max-width: 1040px) {
+    .title {
+        font-weight: 400;
+        font-size: 56px;
+    }
+
+    .subTitle {
+        width: 330px;
+    }
+}
